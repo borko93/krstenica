@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class list(models.Model):
+class list_krsteni(models.Model):
     knjiga = models.CharField(max_length=100)
     strana = models.CharField(max_length=1000)
     broj = models.CharField(max_length=100000)
@@ -13,5 +13,9 @@ class list(models.Model):
 
     datum_rodjenja = models.CharField(max_length=100)
     mjesto_rodjenja = models.CharField(max_length=30)
+
+    def __str__(self):
+        return self.hram
+    
 
     

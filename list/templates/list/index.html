@@ -3,7 +3,7 @@
     <head>
         <title>Крштени лист</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">"
+        
 
     </head>
     <body>
@@ -11,5 +11,38 @@
             <h2>Унос података у крштени лист</h2>
             <hr>
         </center>
+        <div class="row">
+
+            <div class="col-md-8">
+        
+            {% for i in rubrike %}
+            <div class="card">
+                <center><b>{{i.ime_prezime}}</b></center>
+                <hr/>
+                {{i.strana}}
+                <hr/>
+                {{i.broj}}
+                <hr/>
+                {{i.eparhija}}
+                <hr/>
+                {{i.hram}}
+                <hr/>
+                {{i.mjesto}}
+                <hr/>
+                {{i.godina}}
+                <hr/>
+                {{i.ime_prezime}}
+                <hr/>
+                {{i.datum_rođenja}}
+                <hr/>
+                {{i.mjesto_rođenja}}
+                <br />
+                <br />
+                {% endfor %}
+           
+        </div>
+        </div>
+
+        </div>
     </body>
 </html>

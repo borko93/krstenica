@@ -1,7 +1,7 @@
 from django import forms
-from .models import list
+from .models import list_krsteni
 
-class listForm(forms.ModelForm):
+class list_krsteniForm(forms.ModelForm):
     class Meta:
-        model = list
-        fields = '__all__'
+        model = list_krsteni
+        fields = ['knjiga', 'strana']
